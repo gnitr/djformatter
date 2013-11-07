@@ -4,22 +4,7 @@ import subprocess
 
 def run_command():
     parser = OptionParser()
-#     parser.add_option("-a", "--automatic",
-#                       action="store_true", dest="automatic", default=False,
-#                       help="no input necessary")
-    parser.add_option("-e", "--vm_type",
-                      action="store", dest="email", default='',
-                      help="email to send errors to")
-    parser.add_option("-c", "--client",
-                      action="store", dest="email", default='',
-                      help="email to send errors to")
-    parser.add_option("-p", "--port",
-                      action="store", dest="email", default='',
-                      help="email to send errors to")
-    parser.add_option("-f", "--file",
-                      action="store", dest="email", default='',
-                      help="email to send errors to")
-    
+
     (options, args) = parser.parse_args()
     
     known_command = False
