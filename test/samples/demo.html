@@ -1,0 +1,22 @@
+{% block myblock %}
+{% if result_set %}
+<script>
+$(function(){
+var a = [1,2,3];
+var b = 'demo ';
+for (i in a) {
+b += a[i];	
+}
+});
+</script>
+<div class="cl1">
+<ul>
+{% for item in result_set %}
+<li>  
+{{ item.label }}
+</li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+{% endblock %}
