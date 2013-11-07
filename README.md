@@ -5,25 +5,27 @@ Reformat Django Template Files
 
 This is a lightweight and simplistic python script used to reformat Django Template files.
 
-What it does:
+### What it does
 
-* reindent each line according to the block of code (Javascript, HTML, Django Template) it belongs
+It reindents each line according to the block of code (Javascript, HTML, Django Template) it belongs. The newly formatted file is sent to the standard output.
 
-Motivation:
+Note that this tool will not change the line the instructions are on. It will only change the indentation of each line.
 
-* I developed this tool when I had to maintain templates inherited from other developer that were so messy they were almost unreadable
+### Motivation
 
-Limitiations:
+I developed this tool when I had to maintain extremely messy and almost unreadable templates inherited from other developers
+
+### Limitations
 
 * The code parsing is very simplistic and therefore the block detection mechanism can easily be fooled
 * Currently it won't deal well with:
-** non valid HTML
-** special HTML elements such as comments or doctype
-** non valid Django
-** non valid Javascript
-** so this script is supposed to be run on working templates producing no error and valid HTML
+  * non valid HTML
+  * special HTML elements such as comments or doctype
+  * non valid Django
+  * non valid Javascript
+  * so this script is supposed to be run on working templates producing no error and valid HTML
 
-Example:
+## Example
 
 This command
 
